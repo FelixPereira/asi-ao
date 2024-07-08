@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+}
+
+@layer utilities {
+  /* TYPOGRAPH */
+  .h1-bold {
+    @apply text-[36px] font-bold text-titleColor;
+  }
+
+  .h2 {
+    @apply text-[30px] font-bold text-titleColor;
+  }
+
+  .textBody {
+    @apply text-[16px] text-textColor;
+  }
+}
+
+@layer components {
+  /* SHADCN COMPONENTS */
+  /* Form */
+  .shad-form_label {
+    @apply text-textColor;
+  }
+
+  .shad-form_error {
+    @apply text-red !important;
+  }
+
+  .shas-input {
+    @apply h-12 rounded-xl border-primary !important;
+  }
+
+  .shad-button_primary {
+    @apply bg-primary hover:bg-none hover:bg-secondary text-white py-[10px] px-[25px] rounded-full transition ease-in-out duration-300 !important;
+  }
+}
