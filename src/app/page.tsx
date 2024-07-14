@@ -79,7 +79,7 @@ const HomePage = () => {
     }
 
     try {
-      const res = await axios.post('/api/register', {
+      const res = await axios.post('https://asi-ao.vercel.app/api/register', {
         ...values,
         registrationDate,
         totalCost,
