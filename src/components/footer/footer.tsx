@@ -4,22 +4,22 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const SOCIAL_ICONS = [
   {
-    iconPaht: '/icons/facebook.svg',
+    iconPaht: '/assets/icons/facebook.svg',
     href: 'https://www.facebook.com/ASIministries',
     label: 'facebook',
   },
   {
-    iconPaht: '/icons/instagram.svg',
+    iconPaht: '/assets/icons/instagram.svg',
     href: '/',
     label: 'instagram',
   },
   {
-    iconPaht: '/icons/x.svg',
+    iconPaht: '/assets/icons/x.svg',
     href: 'https://twitter.com/ASIministries',
     label: 'x',
   },
   {
-    iconPaht: '/icons/youtube.svg',
+    iconPaht: '/assets/icons/youtube.svg',
     href: 'https://twitter.com/ASIministries',
     label: 'youtube',
   },
@@ -50,7 +50,7 @@ const Footer = () => {
         <div>
           <Link href='/'>
             <Image
-              src='/images/logo-white.png'
+              src='/assets/images/logo-white.png'
               alt='Logotipo'
               width={150}
               height={50}
@@ -102,7 +102,7 @@ const Footer = () => {
         '
       >
         <p className='text-textColor text-[14px]'>
-          © 2024 ASI |<Link href='/'>By: Inovatech Soluções</Link>
+          © 2024 ASI Angola | By: <Link className='text-secondary' href='www.inovatech.ao'>Inovatech Soluções</Link>
         </p>
       </div>
     </footer>
