@@ -50,9 +50,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ message: 'Erro ao enviar' }, { status: 500 });
     }
 
-    console.log(data);
-    NextResponse.json({ data, status: 200 });
+    return NextResponse.json({ data, status: 200 });
   } catch (error) {
-    NextResponse.json({ error }, { status: 500 });
+    return NextResponse.json({ error }, { status: 500 });
   }
 }
